@@ -4,7 +4,7 @@ import Component from 'metal-component';
 import JSX from 'metal-jsx';
 
 class Modal extends Component  {
-	jsx() {
+	render() {
 		var buttons = this.footerButtons.map((button) => {
 			return <button type="button" class="btn btn-primary">{button.label}</button>
 		});
