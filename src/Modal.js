@@ -4,6 +4,10 @@ import Component from 'metal-component';
 import JSX from 'metal-jsx';
 
 class Modal extends Component  {
+	hide() {
+		this.visible = false;
+	}
+
 	render() {
 		var buttons = this.footerButtons.map((button) => {
 			return <button type="button" class="btn btn-primary">{button.label}</button>
@@ -13,6 +17,9 @@ class Modal extends Component  {
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<header class="modal-header">
+						<button type="button" class="close" data-onclick={this.hide.bind(this)} aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
 						<h4 class="modal-title">{this.header}</h4>
 					</header>
 					<section class="modal-body">{this.body}</section>
