@@ -1,9 +1,8 @@
 'use strict';
 
-import Component from 'metal-component';
-import JSX from 'metal-jsx';
+import JSXComponent from 'metal-jsx';
 
-class Modal extends Component  {
+class Modal extends JSXComponent  {
 	hide() {
 		this.visible = false;
 	}
@@ -29,7 +28,6 @@ class Modal extends Component  {
 		</div>;
 	}
 }
-JSX.register(Modal);
 
 Modal.STATE = {
 	body: {
