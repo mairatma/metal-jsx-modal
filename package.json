@@ -24,18 +24,19 @@
       [
         "incremental-dom",
         {
-          "componentAsReference": true,
-          "prefix": "IncrementalDOM"
+          "components": true,
+          "prefix": "IncrementalDOM",
+          "runtime": "iDOMHelpers"
         }
       ]
     ]
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "metal-jsx": "^1.0.0-rc.6"
+    "metal-jsx": "^1.0.0-rc.8"
   },
   "devDependencies": {
-    "babel-plugin-incremental-dom": "mairatma/babel-plugin-incremental-dom#componentAsReferenceBuild",
+    "babel-plugin-incremental-dom": "mairatma/babel-plugin-incremental-dom#build",
     "gulp": "^3.8.11",
     "gulp-metal": "^1.0.0"
   }
