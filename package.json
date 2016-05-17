@@ -1,9 +1,9 @@
 {
-  "name": "metal-modal",
+  "name": "metal-jsx-modal",
   "version": "0.0.0",
   "description": "A Modal component built using JSX templates",
   "license": "BSD",
-  "repository": "metal/metal-modal",
+  "repository": "metal/metal-jsx-modal",
   "engines": {
     "node": ">=0.12.0",
     "npm": ">=3.0.0"
@@ -20,23 +20,14 @@
     "metal"
   ],
   "babel": {
-    "plugins": [
-      [
-        "incremental-dom",
-        {
-          "components": true,
-          "prefix": "IncrementalDOM",
-          "runtime": "iDOMHelpers"
-        }
-      ]
-    ]
+    "presets": ["metal-jsx"]
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
     "metal-jsx": "^1.0.0-rc.8"
   },
   "devDependencies": {
-    "babel-plugin-incremental-dom": "^3.1.0",
+    "babel-preset-metal-jsx": "^0.0.2",
     "gulp": "^3.8.11",
     "gulp-metal": "^1.0.0"
   }
