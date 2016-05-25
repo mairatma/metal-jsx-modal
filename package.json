@@ -27,7 +27,7 @@
     "metal-jsx": "^1.0.0-rc.8"
   },
   "devDependencies": {
-    "babel-preset-metal-jsx": "^0.0.2",
+    "babel-preset-metal-jsx": "^0.0.3",
     "gulp": "^3.8.11",
     "gulp-metal": "^1.0.0"
   }
